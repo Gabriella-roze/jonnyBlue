@@ -32,7 +32,7 @@ body{
 #frame {
   width: 80%;
   height: 98%;
-  background-image: url(../images/frame1_background.jpg);
+  background-image: url(../images/frame2_background.png);
   background-repeat: no-repeat, repeat;
   background-position:center;
   position: relative;
@@ -42,20 +42,25 @@ body{
 
 
 /*** BUTTONS ***/
-#btn__choice--pickup,
-#btn__choice--strip {
-  width: 10%;
+button {
   border-radius: 30px;
   padding: 10px;
-  display: none;
+  margin: 20px;
+  display: initial;
 }
 #btn_play {
   position: fixed;
   width: 15%;
   display: none;
-  position: absolute;
   top: 50%;
   left: 50%;
+}
+#btn__choice{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10%;
+  top:10%;
 }
 
 
@@ -64,8 +69,8 @@ body{
 
 #johnny1 {
   position: fixed;
-  animation: slide_in .2s ease-in-out forwards;
-  display: none;
+
+  display: initial;
 }
 #lady1 {
   position: fixed;
@@ -73,10 +78,14 @@ body{
   position: fixed;
   top: 40vh;
   left: 20vw;
-  display: none;
+  display: initial;
 }
-
-
+.anim-slide_in {
+  animation: slide_in .2s ease-in-out forwards;
+}
+.anim-strip {
+animation: strip .1s 5;
+}
 
 /*** ANIMATIONS ***/
 
@@ -89,3 +98,9 @@ body{
 
       }
 }
+
+  @keyframes strip {
+    100%{
+      transform: rotateY(360deg);
+    }
+  }
