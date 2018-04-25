@@ -16,9 +16,9 @@ let johnnyOne = document.getElementById('johnny1');
 btnPlay.addEventListener('click', function(){
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
+})
 // frame2
   btnStrip.addEventListener('click', function(){
     johnnyOne.classList.add('anim-strip');
     soundStrip.play();
 })
-}

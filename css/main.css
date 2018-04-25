@@ -55,21 +55,21 @@ body{
 
 /*** BUTTONS ***/
 button {
-  position: fixed;
+  position: absolute;
   border-radius: 30px;
   padding: 10px;
   margin: 20px;
 }
 #btn_play {
+  position: absolute;
   width: 15%;
-  display: none;
-  top: 50%;
-  left: 50%;
+  top: 43%;
+  left: 43%;
 }
 #btn__choice{
+  position: absolute;
   display: flex;
   flex-direction: column;
-  position: absolute;
   right: 10%;
   top:10%;
 }
@@ -78,12 +78,11 @@ button {
 
 /*** CHARACTERS ***/
 #johnny1 {
-  position: fixed;
-
+  position: absolute;
   display: initial;
 }
 #lady1 {
-  position: fixed;
+  position: absolute;
   height: 40%;
   position: fixed;
   top: 40vh;
