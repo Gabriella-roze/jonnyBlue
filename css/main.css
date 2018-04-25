@@ -39,7 +39,7 @@ body{
 }
 /*** CHARACTERS ***/
 #johnny1 {
-  animation: slide_in .5s ease-in-out forwards;
+  animation: slide_in .2s ease-in-out forwards;
 }
 
 
