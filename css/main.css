@@ -11,7 +11,6 @@ body{
 
 
 /*** PHONE DISPLAY ***/
-
 .phone {
   width: 80vw;
   display: flex;
@@ -60,7 +59,6 @@ body{
   width: 10%;
   border-radius: 30px;
   padding: 10px;
-  display: none;
   position: absolute;
 }
 #btn_play {
@@ -74,7 +72,6 @@ body{
 
 
 /*** CHARACTERS ***/
-
 #johnny1 {
   position: fixed;
   animation: slide_in .2s ease-in-out forwards;
@@ -92,7 +89,6 @@ body{
 
 
 /*** CLASS ANIMATIONS ***/
-
 .screen_transition {
   animation: screen_transition .6s ease-out .5s forwards;
 }
@@ -100,7 +96,6 @@ body{
 
 
 /*** KEYFRAM ANIMATIONS ***/
-
 @keyframes slide_in {
   0%{
       transform: translate(-70%, 30%);

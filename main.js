@@ -12,4 +12,5 @@ btnPlay.addEventListener('click', function(){
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
   
+
 })
