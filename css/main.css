@@ -8,10 +8,30 @@ body{
   background-color: #3E758C;
 
 }
-#frame {
+.phone {
   width: 80vw;
-  height: 700vh;
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70vh;
+  border: 2px solid white ;
+  border-radius: 40px;
+}
+.phone__top{
+  width: .8%;
+  height: 30%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.phone__bottom {
+  width: 5%;
+  height: 10%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+#frame {
+  width: 80%;
+  height: 98%;
   background-image: url(../images/background-frame1.png);
   background-repeat: no-repeat, repeat;
   background-position:center;
