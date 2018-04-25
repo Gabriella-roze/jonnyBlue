@@ -11,4 +11,5 @@ let frameTwo = document.getElementById('frame2');
 btnPlay.addEventListener('click', function(){
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
+  
 })
