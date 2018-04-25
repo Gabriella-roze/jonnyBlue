@@ -21,3 +21,4 @@ btnPlay.addEventListener('click', function(){
     johnnyOne.classList.add('anim-strip');
     soundStrip.play();
 })
+}

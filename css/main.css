@@ -106,7 +106,7 @@ animation: strip .1s 5;
 
 
 
-/*** KEYFRAM ANIMATIONS ***/
+/*** KEYFRAMES ANIMATIONS ***/
 @keyframes slide_in {
   0%{
       transform: translate(-70%, 30%);
