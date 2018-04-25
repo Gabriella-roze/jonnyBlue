@@ -39,7 +39,6 @@ body{
 .frames--all {
   width: 80%;
   height: 98%;
-  background-image: url(../images/frame2_background.png);
   background-repeat: no-repeat, repeat;
   background-position:center;
   position: relative;
@@ -56,13 +55,12 @@ body{
 
 /*** BUTTONS ***/
 button {
+  position: fixed;
   border-radius: 30px;
   padding: 10px;
   margin: 20px;
-  display: initial;
 }
 #btn_play {
-  position: fixed;
   width: 15%;
   display: none;
   top: 50%;
