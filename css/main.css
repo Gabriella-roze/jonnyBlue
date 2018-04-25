@@ -58,12 +58,6 @@ body{
 
 
 /*** BUTTONS ***/
-button {
-  position: absolute;
-  border-radius: 30px;
-  padding: 10px;
-  margin: 20px;
-}
 #btn_play {
   position: absolute;
   width: 15%;
@@ -76,6 +70,8 @@ button {
   flex-direction: column;
   right: 10%;
   top:10%;
+  border-radius: 30px;
+
 }
 
 
