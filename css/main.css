@@ -35,18 +35,37 @@ body{
   background-image: url(../images/frame1_background.jpg);
   background-repeat: no-repeat, repeat;
   background-position:center;
+  position: relative;
 
 }
+
+
+
+/*** BUTTONS ***/
+#btn_play {
+  position: fixed;
+  width: 15%;
+  display: none;
+}
+
+
+
 /*** CHARACTERS ***/
+
 #johnny1 {
+  position: fixed;
   animation: slide_in .2s ease-in-out forwards;
+  display: none;
 }
 #lady1 {
+  position: fixed;
   height: 40%;
   position: fixed;
   top: 40vh;
   left: 20vw;
+  display: none;
 }
+
 
 
 /*** ANIMATIONS ***/
