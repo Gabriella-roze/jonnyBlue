@@ -50,6 +50,10 @@ body{
   background-image: url(../images/frame2_background.png);
   display: none;
 }
+#frame3 {
+  display: none;
+  background-image: url(../images/frame2_background.png);
+}
 
 
 
@@ -80,6 +84,8 @@ button {
 #johnny1 {
   position: absolute;
   display: initial;
+  bottom: 10%;
+  left: 35%;
 }
 #lady1 {
   position: absolute;
@@ -89,6 +95,12 @@ button {
   left: 20vw;
   display: initial;
 }
+
+
+/*** CLASS ANIMATIONS ***/
+.screen_transition {
+  animation: screen_transition .6s ease-out .5s forwards;
+}
 .anim-slide_in {
   animation: slide_in .2s ease-in-out forwards;
 }
@@ -96,20 +108,15 @@ button {
 animation: strip .1s 5;
 }
 
-/*** CLASS ANIMATIONS ***/
-.screen_transition {
-  animation: screen_transition .6s ease-out .5s forwards;
-}
-
 
 
 /*** KEYFRAMES ANIMATIONS ***/
 @keyframes slide_in {
   0%{
-      transform: translate(-70%, 30%);
+      transform: translate(-500%);
     }
     100%{
-        transform: translate(120%, 30%);
+        transform: translate(0%);
     }
 }
 @keyframes screen_transition {
