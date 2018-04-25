@@ -32,7 +32,7 @@ body{
 #frame {
   width: 80%;
   height: 98%;
-  background-image: url(../images/background-frame1.png);
+  background-image: url(../images/frame1_background.jpg);
   background-repeat: no-repeat, repeat;
   background-position:center;
 
@@ -40,6 +40,12 @@ body{
 /*** CHARACTERS ***/
 #johnny1 {
   animation: slide_in .2s ease-in-out forwards;
+}
+#lady1 {
+  height: 40%;
+  position: fixed;
+  top: 40vh;
+  left: 20vw;
 }
 
 
