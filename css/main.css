@@ -37,3 +37,20 @@ body{
   background-position:center;
 
 }
+/*** CHARACTERS ***/
+#johnny1 {
+  animation: slide_in .5s ease-in-out forwards;
+}
+
+
+/*** ANIMATIONS ***/
+
+  @keyframes slide_in {
+  0%{
+      transform: translate(-70%, 30%);
+    }
+    100%{
+        transform: translate(120%, 30%);
+
+      }
+}
