@@ -1,0 +1,13 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#frame {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../images/background-frame1.png);
+  background-repeat: no-repeat, repeat;
+}
