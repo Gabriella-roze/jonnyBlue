@@ -32,15 +32,47 @@ body{
 #frame {
   width: 80%;
   height: 98%;
-  background-image: url(../images/background-frame1.png);
+  background-image: url(../images/frame1_background.jpg);
   background-repeat: no-repeat, repeat;
   background-position:center;
+  position: relative;
 
 }
-/*** CHARACTERS ***/
-#johnny1 {
-  animation: slide_in .2s ease-in-out forwards;
+
+
+
+/*** BUTTONS ***/
+<<<<<<< HEAD
+#btn__choice--pickup, #btn__choice--strip{
+  width: 10%;
+  border-radius: 30px;
+  padding: 10px;
+=======
+#btn_play {
+  position: fixed;
+  width: 15%;
+  display: none;
+>>>>>>> c58a5313a8b5e9d265579b18345486826047ad60
 }
+
+
+
+/*** CHARACTERS ***/
+
+#johnny1 {
+  position: fixed;
+  animation: slide_in .2s ease-in-out forwards;
+  display: none;
+}
+#lady1 {
+  position: fixed;
+  height: 40%;
+  position: fixed;
+  top: 40vh;
+  left: 20vw;
+  display: none;
+}
+
 
 
 /*** ANIMATIONS ***/
