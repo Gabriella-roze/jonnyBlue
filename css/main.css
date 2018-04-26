@@ -51,7 +51,7 @@ body {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
   stroke-width: 1;
-  animation: dash 3s linear forwards, fill_in 1s ease-in-out forwards 3s;
+  animation: dash 2s linear forwards, fill_in 1s ease-in-out forwards 1.5s;
 }
 
 /*** FRAMES ***/
@@ -97,6 +97,8 @@ body {
   width: 25%;
   top: 28%;
   left: 23%;
+  animation: jumping .7s ease 2.5s;
+
 }
 #btn_play:hover {
   animation: jumping .7s ease infinite;
