@@ -44,7 +44,8 @@ body{
   position: relative;
 }
 #frame1 {
-  background-image: url(../images/frame1_background.jpg);
+  display: initial;
+  background-image: url(../images/frame1_background.png);
 }
 #frame2 {
   background-image: url(../images/frame2_background.png);
@@ -54,6 +55,16 @@ body{
   display: none;
   background-image: url(../images/frame2_background.png);
 }
+#frame4 {
+  display: none;
+  background-image: url(../images/frame4_background.png);
+}
+#frame5 {
+  display: none;
+  background-image: url(../images/frame1_background.png);
+}
+
+
 
 
 
