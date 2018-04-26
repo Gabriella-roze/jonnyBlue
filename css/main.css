@@ -44,7 +44,7 @@ body{
   position: relative;
 }
 #frame1 {
-  background-image: url(../images/frame1_background.jpg);
+  background-image: url(../images/frame1_background.png);
 }
 #frame2 {
   background-image: url(../images/frame2_background.png);
