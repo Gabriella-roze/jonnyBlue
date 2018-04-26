@@ -11,6 +11,7 @@ const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
 // characters
 const johnnyOne = document.getElementById('johnny1');
+const johnnyTwo = document.getElementById('johnny2');
 
 // FRAMES
 // frame1
@@ -25,4 +26,10 @@ btnPlay.addEventListener('click', function(){
   btnStrip.addEventListener('click', function(){
     johnnyOne.classList.add('anim-strip');
     soundStrip.play();
+    btnStrip.style.display='none';
+})
+
+johnnyOne.addEventListener('animationend', function(){
+johnnyOne.style.display= 'none';
+johnnyTwo.style.display= 'initial';
 })

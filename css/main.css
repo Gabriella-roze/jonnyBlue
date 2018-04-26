@@ -81,8 +81,6 @@ body{
   flex-direction: column;
   right: 10%;
   top:10%;
-  border-radius: 30px;
-
 }
 
 
@@ -102,7 +100,13 @@ body{
   left: 20vw;
   display: initial;
 }
+#johnny2{
+  position: absolute;
+  display: none;
+  bottom: 10%;
+  left: 35%;
 
+}
 
 /*** CLASS ANIMATIONS ***/
 .screen_transition {
