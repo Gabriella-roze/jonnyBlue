@@ -51,7 +51,7 @@ body {
   stroke-dasharray: 800;
   stroke-dashoffset: 800;
   stroke-width: 1;
-  animation: dash 2s linear forwards, fill_in 1s ease-in-out forwards 1.5s;
+  animation: dash 1.5s linear forwards, fill_in 1s ease-in-out forwards 1s;
 }
 
 /*** FRAMES ***/
@@ -98,7 +98,7 @@ body {
   top: 28%;
   left: 23%;
   animation: jumping .7s ease 2.5s;
-
+  cursor: pointer;
 }
 #btn_play:hover {
   animation: jumping .7s ease infinite;
@@ -107,8 +107,32 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: 10%;
-  top: 10%;
+  right: 0%;
+  top: 3%;
+  cursor: pointer;
+}
+.btn__choice--strip {
+  background: url(../images/strip.svg) no-repeat center;
+  background-size: 50px;
+  background-color: hsla(204, 94%, 37%, .8);
+  cursor: pointer;
+  padding: 40px 70px;
+  margin: 5px 9px 0px;
+  border-top-left-radius: 20px;
+
+}
+.btn__choice--pickup {
+  background: url(../images/talk.svg) no-repeat center;
+  background-size: 50px;
+  background-color: hsla(204, 94%, 37%, .8);
+  cursor: pointer;
+  padding: 40px 70px;
+  margin: 5px 9px 0px;
+
+  border-bottom-left-radius: 20px;
+}
+button:hover {
+  box-shadow: -8px 0px 20px #7EA6B5;
 }
 
 
@@ -128,6 +152,7 @@ body {
   top: 40vh;
   left: 20vw;
   display: initial;
+  cursor: pointer;
 }
 #johnny2 {
   position: absolute;
