@@ -1,16 +1,16 @@
 // OUR VARIABLES
 // buttons
-let btnPlay = document.getElementById('btn_play');
-let btnPickup = document.getElementById('btn__choice--pickup');
-let btnStrip = document.getElementById('btn__choice--strip');
+const btnPlay = document.getElementById('btn_play');
+const btnPickup = document.getElementById('btn__choice--pickup');
+const btnStrip = document.getElementById('btn__choice--strip');
 // sounds
-let soundStrip = document.getElementById('sound_strip');
-let soundSlideIn = document.getElementById('sound_slidein');
+const soundStrip = document.getElementById('sound_strip');
+const soundSlideIn = document.getElementById('sound_slidein');
 // frames
-let frameOne = document.getElementById('frame1');
-let frameTwo = document.getElementById('frame2');
+const frameOne = document.getElementById('frame1');
+const frameTwo = document.getElementById('frame2');
 // characters
-let johnnyOne = document.getElementById('johnny1');
+const johnnyOne = document.getElementById('johnny1');
 
 // FRAMES
 // frame1
