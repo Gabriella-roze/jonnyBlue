@@ -66,8 +66,6 @@ body{
 
 
 
-
-
 /*** BUTTONS ***/
 #btn_play {
   position: absolute;
@@ -105,8 +103,9 @@ body{
   display: none;
   bottom: 10%;
   left: 35%;
-
 }
+
+
 
 /*** CLASS ANIMATIONS ***/
 .screen_transition {
@@ -137,7 +136,6 @@ animation: strip .1s 5;
   to {
     transform: translateY();
   }
-
 }
 
   @keyframes strip {
