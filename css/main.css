@@ -53,6 +53,35 @@ body {
   stroke-width: 1;
   animation: dash 1.5s linear forwards, fill_in 1s ease-in-out forwards 1s;
 }
+.btn__background {
+  fill:#1D74B5;
+}
+.st {
+  fill:#EEF6F8;stroke:#000000;stroke-miterlimit:10;
+}
+.face {
+  fill:#EEF6F8;
+}
+.st3 {
+  fill:none;stroke:#000000;stroke-miterlimit:10;
+}
+.st4 {
+  fill:#BAC9E3;
+}
+.st5 {
+  fill:#BAC9E3;stroke:#000000;stroke-miterlimit:10;
+}
+.st6 {
+  fill:none;stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;
+}
+.st7 {
+  fill:none;stroke:#000000;stroke-width:0.75;stroke-miterlimit:10;
+}
+.st8 {
+  fill:#FFFFFF;
+}
+
+
 
 /*** FRAMES ***/
 
