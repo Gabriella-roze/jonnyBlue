@@ -48,7 +48,7 @@ btnPlay.addEventListener('click', function() {
   johnnyOne.classList.add('anim-slide_in');
   btnPickup.classList.add('unhoverable');
   soundSlideIn.play();
-  soundIntro.volume = .3;
+  soundIntro.volume = .1;
   heymama();
 })
 
