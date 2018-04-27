@@ -46,6 +46,7 @@ btnPlay.addEventListener('click', function() {
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
   johnnyOne.classList.add('anim-slide_in');
+  soundSlideIn.play();
   heymama();
 })
 
