@@ -20,6 +20,8 @@ const johnnyTwo = document.getElementById('johnny2');
 
 // FRAMES
 // frame1
+makeButtonUnclickable(btnPickup);
+
 btnPlay.addEventListener('click', function() {
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
@@ -38,10 +40,12 @@ function heymama() {
 btnStrip.addEventListener('click', function() {
   johnnyOne.classList.add('anim-strip');
   soundStrip.play();
-  btnStrip.style.display = 'none';
   strip2();
   goaway();
+  makeButtonUnclickable(btnStrip);
+  makeButtonClickable(btnPickup);
 })
+
 
 function strip2() {
   setTimeout(function() {
@@ -52,6 +56,16 @@ function strip2() {
   }, 100);
 };
 
+function makeButtonUnclickable(btn) {
+  btn.disabled = true;
+  btn.style.opacity = '0.5';
+}
+
+function makeButtonClickable(btn) {
+  btn.disabled = false;
+  btn.style.opacity = '1';
+}
+
 function goaway() {
   setTimeout(function() {
     soundGoAway.play();
@@ -60,5 +74,5 @@ function goaway() {
 
 btnPickup.addEventListener('click', function() {
   soundPickUp.play();
-  btnPickup.style.display = 'none';
+  makeButtonUnclickable(btnPickup);
 })
