@@ -12,6 +12,9 @@ const soundGoAway = document.getElementById('sound_goaway');
 // frames
 const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
+const frameThree = document.getElementById('frame3');
+const frameFour = document.getElementById('frame4');
+
 // characters
 const johnnyOne = document.getElementById('johnny1');
 const johnnyTwo = document.getElementById('johnny2');
@@ -46,7 +49,6 @@ btnStrip.addEventListener('click', function() {
   makeButtonClickable(btnPickup);
 })
 
-
 function strip2() {
   setTimeout(function() {
     johnnyOne.style.display = 'none';
@@ -75,4 +77,22 @@ function goaway() {
 btnPickup.addEventListener('click', function() {
   soundPickUp.play();
   makeButtonUnclickable(btnPickup);
+  frameThreePlay();
 })
+
+// frame3
+function frameThreePlay(){
+  setTimeout(function(){
+    frameTwo.style.display = 'none';
+    frameThree.style.display = 'initial';
+    frameFourPlay();
+  }, 3000)
+}
+
+//frame4
+function frameFourPlay(){
+  setTimeout(function(){
+    frameThree.style.display = 'none';
+    frameFour.style.display = 'initial';
+  }, 3000)
+}
