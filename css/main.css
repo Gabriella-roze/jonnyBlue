@@ -202,13 +202,18 @@ button:not(.unhoverable):hover {
 }
 #johnny--musician {
   position: absolute;
-  height: 40%;
+  bottom: 10%;
+  height: 60%;
+  cursor: pointer;
 }
 #ladyboy {
   position: absolute;
 }
 #lady2 {
   position: absolute;
+  height: 50%;
+  bottom: 10%;
+  right: 0%;
 }
 #musician {
   position: absolute;

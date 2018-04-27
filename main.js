@@ -12,6 +12,12 @@ const soundPickUp = document.getElementById('sound_pickup');
 const soundGoAway = document.getElementById('sound_goaway');
 const soundIntro = document.getElementById('sound_intro');
 const soundHeartbreak = document.getElementById('sound_heartbreak');
+const soundTheme = document.getElementById('sound_theme');
+const soundPlay1 = document.getElementById('sound_play1');
+const soundPlay2 = document.getElementById('sound_play2');
+const soundPlay3 = document.getElementById('sound_play3');
+
+
 // frames
 const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
@@ -20,7 +26,9 @@ const frameFour = document.getElementById('frame4');
 // characters
 const johnnyOne = document.getElementById('johnny1');
 const johnnyTwo = document.getElementById('johnny2');
-const johnnyMusicianOne = document.getElementById('johnny1');
+const johnnyMusician = document.getElementById('johnny--musician');
+const ladyOne = document.getElementById('lady1');
+const ladyTwo = document.getElementById('lady2');
 //animations
 
 
@@ -93,6 +101,7 @@ function makeButtonClickable(btn) {
 function goaway() {
   setTimeout(function() {
     soundGoAway.play();
+    ladyOne.src = 'images/lady1_angry.svg'
   }, 1200);
 };
 
@@ -110,13 +119,32 @@ function frameThreePlay(){
     frameTwo.style.display = 'none';
     frameThree.style.display = 'initial';
     frameFourPlay();
+    soundTheme.play();
+    soundIntro.pause();
   }, 3000)
 }
 
 //frame4
+let steps = 0;
+
 function frameFourPlay(){
   setTimeout(function(){
+    soundTheme.volume = .4;
     frameThree.style.display = 'none';
     frameFour.style.display = 'initial';
   }, 4000)
 }
+johnnyMusician.addEventListener('click', function(){
+  johnnyMusician.src = 'images/johnny_play.svg';
+  steps += 1;
+  if (steps == 1) {
+    soundPlay1.play();
+  }
+  else if (steps == 2) {
+    soundPlay2.play();
+  }
+  else if (steps == 3){
+    soundPlay3.play();
+  }
+  console.log(steps);
+})
