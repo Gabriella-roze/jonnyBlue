@@ -3,12 +3,14 @@
 const btnPlay = document.getElementById('btn_play');
 const btnPickup = document.getElementById('btn__choice--pickup');
 const btnStrip = document.getElementById('btn__choice--strip');
+const btnSoundPlay = document.getElementById('btn__sound--on');
 // sounds
 const soundStrip = document.getElementById('sound_strip');
 const soundSlideIn = document.getElementById('sound_slidein');
 const soundHeyMama = document.getElementById('sound_heymama');
 const soundPickUp = document.getElementById('sound_pickup');
 const soundGoAway = document.getElementById('sound_goaway');
+const soundIntro = document.getElementById('sound_intro');
 // frames
 const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
@@ -24,12 +26,25 @@ const johnnyTwo = document.getElementById('johnny2');
 // FRAMES
 // frame1
 makeButtonUnclickable(btnPickup);
+let music = false;
+
+btnSoundPlay.addEventListener('click', function(){
+  if (music == false){
+    music = true;
+    soundIntro.play();
+    btnSoundPlay.innerHTML = '<i class="fas fa-volume-up"></i>';
+  }
+  else if (music == true){
+    music = false;
+    soundIntro.pause();
+    btnSoundPlay.innerHTML = '<i class="fas fa-volume-off"></i>';
+  }
+})
 
 btnPlay.addEventListener('click', function() {
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
   johnnyOne.classList.add('anim-slide_in');
-  soundSlideIn.play();
   heymama();
 })
 
@@ -43,6 +58,7 @@ function heymama() {
 btnStrip.addEventListener('click', function() {
   johnnyOne.classList.add('anim-strip');
   soundStrip.play();
+  soundSlideIn.play();
   strip2();
   goaway();
   makeButtonUnclickable(btnStrip);

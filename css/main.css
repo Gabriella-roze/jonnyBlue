@@ -133,8 +133,17 @@ body {
 }
 button:hover {
   box-shadow: -8px 0px 20px #7EA6B5;
-  width: 120px;
   transition: .5s;
+}
+#btn__sound--on {
+  position: absolute;
+  bottom: 4%;
+  left: 3%;
+  background-color: hsla(204, 94%, 37%, .8);
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  width: 7%;
 }
 
 
