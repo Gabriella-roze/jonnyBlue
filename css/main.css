@@ -55,6 +55,7 @@ body {
 }
 .btn__background {
   fill:#1D74B5;
+  animation: color_change 10s ease-in-out 2s infinite;
 }
 .st {
   fill:#EEF6F8;stroke:#000000;stroke-miterlimit:10;
@@ -234,6 +235,20 @@ button:hover {
 
 
 /*** KEYFRAMES ANIMATIONS ***/
+@keyframes color_change {
+  40% {
+    fill: #345C73;
+  }
+  60% {
+    fill: lightblue;
+  }
+  80% {
+    fill: #518199;
+  }
+  100% {
+    fill: #1D74B5;
+  }
+}
 @keyframes fill_in {
   to { fill-opacity: 1; }
 }
