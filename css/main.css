@@ -161,7 +161,7 @@ body {
   margin: 5px 9px 0px;
   border-bottom-left-radius: 20px;
 }
-button:hover {
+button:not(.unhoverable):hover {
   box-shadow: -8px 0px 20px #7EA6B5;
   transition: .5s;
 }

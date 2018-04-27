@@ -46,6 +46,7 @@ btnPlay.addEventListener('click', function() {
   frameOne.style.display = 'none';
   frameTwo.style.display = 'initial';
   johnnyOne.classList.add('anim-slide_in');
+  btnPickup.classList.add('unhoverable');
   soundSlideIn.play();
   heymama();
 })
@@ -65,6 +66,8 @@ btnStrip.addEventListener('click', function() {
   goaway();
   makeButtonUnclickable(btnStrip);
   makeButtonClickable(btnPickup);
+  btnStrip.classList.add('unhoverable');
+  btnPickup.classList.remove('unhoverable');
 })
 
 function strip2() {
@@ -96,6 +99,7 @@ btnPickup.addEventListener('click', function() {
   soundPickUp.play();
   makeButtonUnclickable(btnPickup);
   frameThreePlay();
+  btnPickup.classList.add('unhoverable');
 })
 
 // frame3
