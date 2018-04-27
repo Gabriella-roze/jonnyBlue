@@ -188,10 +188,9 @@ button:hover {
 }
 #lady1 {
   position: absolute;
-  height: 40%;
-  position: fixed;
-  top: 40vh;
-  left: 20vw;
+  bottom: 5%;
+  left: 5%;
+  height: 60%;
   display: initial;
   cursor: pointer;
 }
@@ -203,6 +202,7 @@ button:hover {
 }
 #johnny--musician {
   position: absolute;
+  height: 40%;
 }
 #ladyboy {
   position: absolute;

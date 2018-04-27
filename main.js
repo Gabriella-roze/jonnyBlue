@@ -11,15 +11,16 @@ const soundHeyMama = document.getElementById('sound_heymama');
 const soundPickUp = document.getElementById('sound_pickup');
 const soundGoAway = document.getElementById('sound_goaway');
 const soundIntro = document.getElementById('sound_intro');
+const soundHeartbreak = document.getElementById('sound_heartbreak');
 // frames
 const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
 const frameThree = document.getElementById('frame3');
 const frameFour = document.getElementById('frame4');
-
 // characters
 const johnnyOne = document.getElementById('johnny1');
 const johnnyTwo = document.getElementById('johnny2');
+const johnnyMusicianOne = document.getElementById('johnny1');
 //animations
 
 
@@ -99,6 +100,7 @@ btnPickup.addEventListener('click', function() {
 // frame3
 function frameThreePlay(){
   setTimeout(function(){
+    soundHeartbreak.play();
     frameTwo.style.display = 'none';
     frameThree.style.display = 'initial';
     frameFourPlay();
@@ -110,5 +112,5 @@ function frameFourPlay(){
   setTimeout(function(){
     frameThree.style.display = 'none';
     frameFour.style.display = 'initial';
-  }, 3000)
+  }, 4000)
 }
