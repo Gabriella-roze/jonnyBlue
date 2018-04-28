@@ -103,6 +103,7 @@ body {
 #frame2 {
   background-image: url(../images/frame2_background.png);
   display: none;
+  overflow: hidden;
 }
 
 #frame3 {
