@@ -82,8 +82,9 @@ btnStrip.addEventListener('click', function() {
 
 function strip2() {
   setTimeout(function() {
-    johnnyOne.src = 'images/johnny_nude.gif';
-  //  johnnyTwo.style.display = 'initial';
+    johnnyOne.style.display = 'none';
+    johnnyTwo.style.display = 'initial';
+    johnnyTwo.src = 'images/johnny_nude.gif';
     soundStrip.play();
     johnnyTwo.classList.add('anim-strip');
     dreamsSound();
