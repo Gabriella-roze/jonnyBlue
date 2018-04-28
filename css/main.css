@@ -147,7 +147,6 @@ body {
   background: url(../images/strip.svg) no-repeat center;
   background-size: 50px;
   background-color: hsla(204, 94%, 37%, .8);
-  cursor: pointer;
   padding: 40px 60px;
   margin: 5px 9px 0px;
   border-top-left-radius: 20px;
@@ -157,7 +156,6 @@ body {
   background: url(../images/talk.svg) no-repeat center;
   background-size: 50px;
   background-color: hsla(204, 94%, 37%, .8);
-  cursor: pointer;
   padding: 40px 60px;
   margin: 5px 9px 0px;
   border-bottom-left-radius: 20px;

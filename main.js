@@ -59,6 +59,7 @@ btnPlay.addEventListener('click', function() {
   soundSlideIn.play();
   soundIntro.volume = .1;
   heymama();
+  makeButtonClickable(btnStrip);
 })
 
 function heymama() {
@@ -99,11 +100,13 @@ function dreamsSound(){
 function makeButtonUnclickable(btn) {
   btn.disabled = true;
   btn.style.opacity = '0.5';
+  btn.style.cursor = 'initial';
 }
 
 function makeButtonClickable(btn) {
   btn.disabled = false;
   btn.style.opacity = '1';
+  btn.style.cursor = 'pointer';
 }
 
 function goaway() {
