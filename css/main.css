@@ -214,6 +214,7 @@ button:not(.unhoverable):hover {
   height: 50%;
   bottom: 10%;
   right: 0%;
+  transition: .5s;
 }
 #musician {
   position: absolute;

@@ -16,6 +16,7 @@ const soundTheme = document.getElementById('sound_theme');
 const soundPlay1 = document.getElementById('sound_play1');
 const soundPlay2 = document.getElementById('sound_play2');
 const soundPlay3 = document.getElementById('sound_play3');
+const soundDreams = document.getElementById('sound_dreams');
 
 
 // frames
@@ -85,8 +86,14 @@ function strip2() {
     johnnyTwo.style.display = 'initial';
     soundStrip.play();
     johnnyTwo.classList.add('anim-strip');
+    dreamsSound();
   }, 100);
 };
+function dreamsSound(){
+  setTimeout(function(){
+    soundPickUp.play();
+  }, 500);
+}
 
 function makeButtonUnclickable(btn) {
   btn.disabled = true;
@@ -101,12 +108,12 @@ function makeButtonClickable(btn) {
 function goaway() {
   setTimeout(function() {
     soundGoAway.play();
-    ladyOne.src = 'images/lady1_angry.svg'
-  }, 1200);
+    ladyOne.src = 'images/lady1_angry.svg';
+  }, 4500);
 };
 
 btnPickup.addEventListener('click', function() {
-  soundPickUp.play();
+  soundDreams.play();
   makeButtonUnclickable(btnPickup);
   frameThreePlay();
   btnPickup.classList.add('unhoverable');
@@ -146,5 +153,11 @@ johnnyMusician.addEventListener('click', function(){
   else if (steps == 3){
     soundPlay3.play();
   }
-  console.log(steps);
+  playingMusic();
 })
+function playingMusic(){
+  setTimeout(function(){
+    johnnyMusician.src = 'images/johnny_noplay.svg';
+    ladyTwo.style.right = steps * 15 + '%';
+  }, 3300)
+}
