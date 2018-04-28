@@ -197,9 +197,9 @@ button:not(.unhoverable):hover {
 #johnny2 {
   position: absolute;
   display: none;
-  bottom: 0%;
+  bottom: 10%;
   left: 35%;
-  width: 110%
+  height: 76%;
 }
 #johnny--musician {
   position: absolute;
