@@ -113,6 +113,7 @@ function goaway() {
   setTimeout(function() {
     soundGoAway.play();
     ladyOne.src = 'images/lady1_angry.svg';
+    johnnyTwo.src = 'images/johnny_naked-2.svg';
   }, 4500);
 };
 
@@ -120,6 +121,7 @@ btnPickup.addEventListener('click', function() {
   soundDreams.play();
   makeButtonUnclickable(btnPickup);
   frameThreePlay();
+  johnnyTwo.src = 'images/johnny_nude.gif';
   btnPickup.classList.add('unhoverable');
 })
 
