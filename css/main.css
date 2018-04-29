@@ -195,7 +195,7 @@ button:not(.unhoverable):hover {
 #johnny2 {
   position: absolute;
   display: none;
-  bottom: 10%;
+  bottom: 8%;
   left: 33%;
   height: 76%;
 }
