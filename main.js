@@ -17,6 +17,7 @@ const soundPlay1 = document.getElementById('sound_play1');
 const soundPlay2 = document.getElementById('sound_play2');
 const soundPlay3 = document.getElementById('sound_play3');
 const soundDreams = document.getElementById('sound_dreams');
+const soundLadyboy = document.getElementById('sound_ladyboy');
 
 
 // frames
@@ -30,6 +31,7 @@ const johnnyTwo = document.getElementById('johnny2');
 const johnnyMusician = document.getElementById('johnny--musician');
 const ladyOne = document.getElementById('lady1');
 const ladyTwo = document.getElementById('lady2');
+const ladyBoy = document.getElementById('ladyboy');
 //animations
 
 
@@ -167,3 +169,7 @@ function playingMusic(){
     ladyTwo.style.right = steps * 15 + '%';
   }, 3300)
 }
+
+ladyBoy.addEventListener('click', function(){
+  soundLadyboy.play();
+})
