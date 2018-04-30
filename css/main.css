@@ -188,7 +188,7 @@ button:not(.unhoverable):hover {
 #lady1 {
   position: absolute;
   bottom: 5%;
-  left: 5%;
+  left: 20%;
   height: 60%;
   display: initial;
 }
