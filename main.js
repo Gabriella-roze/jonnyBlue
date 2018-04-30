@@ -85,7 +85,7 @@ btnStrip.addEventListener('click', function() {
   strip2();
   goaway();
   makeButtonUnclickable(btnStrip);
-  makeButtonClickable(btnPickup);
+
   btnStrip.classList.add('unhoverable');
   btnPickup.classList.remove('unhoverable');
 })
@@ -123,6 +123,7 @@ function goaway() {
     soundGoAway.play();
     ladyOne.src = 'images/lady1_angry.svg';
     johnnyTwo.src = 'images/johnny_naked-2.svg';
+    makeButtonClickable(btnPickup);
   }, 4500);
 };
 
