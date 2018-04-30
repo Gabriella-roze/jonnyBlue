@@ -215,7 +215,7 @@ button:not(.unhoverable):hover {
 #lady2 {
   position: absolute;
   height: 63%;
-  bottom: 12%;
+  bottom: 10%;
   right: 0%;
   transition: .5s ease-in-out;
   z-index: 1;
