@@ -83,7 +83,6 @@ body {
 }
 
 
-
 /*** FRAMES ***/
 
 .frames--all {
@@ -210,6 +209,7 @@ button:not(.unhoverable):hover {
   height: 60%;
   bottom: 18%;
   left: 30%;
+  cursor: pointer;
 }
 #lady2 {
   position: absolute;
@@ -218,13 +218,16 @@ button:not(.unhoverable):hover {
   right: 0%;
   transition: .5s ease-in-out;
   z-index: 1;
+  cursor: pointer;
 }
 #musician {
   position: absolute;
   height: 45%;
   bottom: 46%;
   right: 2%;
+  cursor: pointer;
 }
+
 
 
 

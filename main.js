@@ -33,6 +33,7 @@ const ladyOne = document.getElementById('lady1');
 const ladyTwo = document.getElementById('lady2');
 const ladyBoy = document.getElementById('ladyboy');
 const musician = document.getElementById('musician');
+const hand = document.getElementById('hand');
 //animations
 
 
@@ -176,6 +177,8 @@ ladyBoy.addEventListener('click', function(){
 //  ladyBoy.src = ;
 })
 
-musician.addEventListener('ckick', function(){
+musician.addEventListener('click', function(){
+  musician.style.cursor = 'pointer';
   soundString.play();
+  hand.classList.add('anim-hand');
 })
