@@ -123,7 +123,7 @@ function goaway() {
     ladyOne.src = 'images/lady1_angry.svg';
     johnnyTwo.src = 'images/johnny_naked-2.svg';
     makeButtonClickable(btnPickup);
-    ladyOne.classList.add('');
+    ladyOne.classList.add('skew');
   }, 4500);
 };
 

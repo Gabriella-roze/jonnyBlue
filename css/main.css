@@ -242,10 +242,18 @@ button:not(.unhoverable):hover {
 .anim-strip {
   animation: strip .1s 5;
 }
+.skew {
+  animation: skew .3s ease-in-out forwards;
+}
 
 
 
 /*** KEYFRAMES ANIMATIONS ***/
+@keyframes skew {
+  to {
+    transform: skewX(-9deg);
+  }
+}
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
