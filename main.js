@@ -181,8 +181,15 @@ function playingMusic(){
 
 ladyBoy.addEventListener('click', function(){
   soundLadyboy.play();
-//  ladyBoy.src = ;
+  ladyBoy.src = 'images/random_person2.svg';
+  toggle();
 })
+
+function toggle(){
+  setTimeout(function(){
+    ladyBoy.src = 'images/random_person.svg';
+  }, 500);
+}
 
 musician.addEventListener('click', function(){
   musician.style.cursor = 'pointer';
