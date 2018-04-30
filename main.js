@@ -20,6 +20,7 @@ const soundPlay3 = document.getElementById('sound_play3');
 const soundDreams = document.getElementById('sound_dreams');
 const soundLadyboy = document.getElementById('sound_ladyboy');
 const soundString = document.getElementById('sound_string');
+const soundGasp = document.getElementById('sound_gasp');
 
 // frames
 const frameOne = document.getElementById('frame1');
@@ -186,5 +187,8 @@ ladyBoy.addEventListener('click', function(){
 musician.addEventListener('click', function(){
   musician.style.cursor = 'pointer';
   soundString.play();
-  hand.classList.add('anim-hand');
+})
+
+ladyTwo.addEventListener('click', function(){
+  soundGasp.play();
 })
