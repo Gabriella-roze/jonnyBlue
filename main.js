@@ -4,6 +4,7 @@ const btnPlay = document.getElementById('btn_play');
 const btnPickup = document.getElementById('btn__choice--pickup');
 const btnStrip = document.getElementById('btn__choice--strip');
 const btnSoundPlay = document.getElementById('btn__sound--on');
+const btnReset = document.getElementById('btn__reset');
 // sounds
 const soundStrip = document.getElementById('sound_strip');
 const soundSlideIn = document.getElementById('sound_slidein');
@@ -36,6 +37,10 @@ const musician = document.getElementById('musician');
 const hand = document.getElementById('hand');
 //animations
 
+//GENERAL
+btnReset.addEventListener('click', function(){
+  location.reload();
+})
 
 // FRAMES
 // frame1
