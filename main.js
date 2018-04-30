@@ -85,7 +85,6 @@ btnStrip.addEventListener('click', function() {
   strip2();
   goaway();
   makeButtonUnclickable(btnStrip);
-
   btnStrip.classList.add('unhoverable');
   btnPickup.classList.remove('unhoverable');
 })
@@ -124,6 +123,7 @@ function goaway() {
     ladyOne.src = 'images/lady1_angry.svg';
     johnnyTwo.src = 'images/johnny_naked-2.svg';
     makeButtonClickable(btnPickup);
+    ladyOne.classList.add('');
   }, 4500);
 };
 
