@@ -173,9 +173,9 @@ function playingMusic(){
 
 ladyBoy.addEventListener('click', function(){
   soundLadyboy.play();
-  ladyBoy.src = ;
+//  ladyBoy.src = ;
 })
 
 musician.addEventListener('ckick', function(){
-  sound
+  soundString.play();
 })
