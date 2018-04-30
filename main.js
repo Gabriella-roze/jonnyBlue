@@ -186,4 +186,5 @@ ladyBoy.addEventListener('click', function(){
 musician.addEventListener('click', function(){
   musician.style.cursor = 'pointer';
   soundString.play();
+  hand.classList.add('anim-hand');
 })
