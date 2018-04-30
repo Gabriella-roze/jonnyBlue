@@ -96,7 +96,7 @@ body {
 }
 
 #frame1 {
-  display: initial;
+  display: none;
   background-color: #305C75;
 }
 
@@ -112,8 +112,8 @@ body {
 }
 
 #frame4 {
-  display: none;
-  background-image: url(../images/frame4_background.jpeg);
+  display: initial;
+  background-image: url(../images/bar.svg);
 }
 
 #frame5 {
@@ -202,11 +202,14 @@ button:not(.unhoverable):hover {
 #johnny--musician {
   position: absolute;
   bottom: 10%;
-  height: 60%;
+  height: 70%;
   cursor: pointer;
 }
 #ladyboy {
   position: absolute;
+  height: 60%;
+  bottom: 18%;
+  left: 30%;
 }
 #lady2 {
   position: absolute;
@@ -217,6 +220,9 @@ button:not(.unhoverable):hover {
 }
 #musician {
   position: absolute;
+  height: 45%;
+  bottom: 46%;
+  right: 2%;
 }
 
 
