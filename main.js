@@ -194,7 +194,10 @@ function toggle(){
 musician.addEventListener('click', function(){
   musician.style.cursor = 'pointer';
   soundString.play();
+  musician.src = 'images/cello2.svg';
+  musician.disabled= true;
 })
+
 
 ladyTwo.addEventListener('click', function(){
   soundGasp.play();
