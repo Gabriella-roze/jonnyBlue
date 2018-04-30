@@ -96,7 +96,7 @@ body {
 }
 
 #frame1 {
-  display: initial;
+  display: none;
   background-color: #305C75;
 }
 
@@ -113,7 +113,7 @@ body {
 
 #frame4 {
   display: initial;
-  background-image: url(../images/frame4_background.jpeg);
+  background-image: url(../images/bar.svg);
 }
 
 #frame5 {
