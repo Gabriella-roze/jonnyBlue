@@ -182,10 +182,10 @@ function playingMusic(){
 ladyBoy.addEventListener('click', function(){
   soundLadyboy.play();
   ladyBoy.src = 'images/random_person2.svg';
-  toggle();
+  toggleLadyboy();
 })
 
-function toggle(){
+function toggleLadyboy(){
   setTimeout(function(){
     ladyBoy.src = 'images/random_person.svg';
   }, 500);
@@ -201,4 +201,12 @@ musician.addEventListener('click', function(){
 
 ladyTwo.addEventListener('click', function(){
   soundGasp.play();
+  ladyTwo.src = 'images/bar_girl-2.svg';
+  toggleGirl();
 })
+
+function toggleGirl(){
+  setTimeout(function(){
+  ladyTwo.src = 'images/bar_girl.svg';
+}, 300);
+}
