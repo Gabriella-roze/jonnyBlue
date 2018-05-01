@@ -21,6 +21,7 @@ const soundDreams = document.getElementById('sound_dreams');
 const soundLadyboy = document.getElementById('sound_ladyboy');
 const soundString = document.getElementById('sound_string');
 const soundGasp = document.getElementById('sound_gasp');
+const soundSlap = document.getElementById('sound_slap');
 // frames
 const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
