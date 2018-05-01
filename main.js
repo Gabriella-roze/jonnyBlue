@@ -21,12 +21,12 @@ const soundDreams = document.getElementById('sound_dreams');
 const soundLadyboy = document.getElementById('sound_ladyboy');
 const soundString = document.getElementById('sound_string');
 const soundGasp = document.getElementById('sound_gasp');
-
 // frames
 const frameOne = document.getElementById('frame1');
 const frameTwo = document.getElementById('frame2');
 const frameThree = document.getElementById('frame3');
 const frameFour = document.getElementById('frame4');
+const frameFive = document.getElementById('frame5');
 // characters
 const johnnyOne = document.getElementById('johnny1');
 const johnnyTwo = document.getElementById('johnny2');
@@ -171,6 +171,7 @@ johnnyMusician.addEventListener('click', function(){
     soundPlay3.play();
   }
   playingMusic();
+  frame5();
 })
 function playingMusic(){
   setTimeout(function(){
@@ -203,7 +204,6 @@ function muted(sound) {
   }, 400)
 }
 
-
 ladyTwo.addEventListener('click', function(){
   soundGasp.play();
   ladyTwo.src = 'images/bar_girl-2.svg';
@@ -214,4 +214,14 @@ function toggleGirl(){
   setTimeout(function(){
   ladyTwo.src = 'images/bar_girl.svg';
 }, 300);
+}
+
+//frame5
+function frame5(){
+  if (steps == 3) {
+    setTimeout(function(){
+      frameFour.style.display = 'none';
+      frameFive.style.display = 'initial';
+    }, 4000);
+  }
 }
