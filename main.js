@@ -157,7 +157,7 @@ function frameFourPlay(){
     soundTheme.volume = .4;
     frameThree.style.display = 'none';
     frameFour.style.display = 'initial';
-  }, 4000)
+  }, 1900)
 }
 
 johnnyMusician.addEventListener('click', function(){
