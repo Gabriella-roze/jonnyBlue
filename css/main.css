@@ -9,7 +9,6 @@ body {
 }
 
 /*** PHONE DISPLAY ***/
-
 .phone {
   width: 80vw;
   display: flex;
@@ -19,14 +18,12 @@ body {
   border: 2px solid white;
   border-radius: 40px;
 }
-
 .phone__top {
   width: .8%;
   height: 30%;
   border: 1px solid white;
   border-radius: 5px;
 }
-
 .phone__bottom {
   width: 5%;
   height: 10%;
@@ -36,15 +33,12 @@ body {
 }
 
 /*** TEXT ***/
-
 .st0 {
   fill: #4D819B;
 }
-
 .st1 {
   fill: #CFECEF;
 }
-
 .st2 {
   fill: #0671B9;
   fill-opacity: 0;
@@ -83,9 +77,7 @@ body {
   fill:#FFFFFF;
 }
 
-
 /*** FRAMES ***/
-
 .frames--all {
   width: 80%;
   height: 98%;
@@ -94,34 +86,27 @@ body {
   background-size: 100%;
   position: relative;
 }
-
 #frame1 {
-  display: none;
+  display: initial;
   background-color: #305C75;
 }
-
 #frame2 {
   background-image: url(../images/frame2_background.png);
   display: none;
   overflow: hidden;
 }
-
 #frame3 {
   display: none;
   background-image: url(../images/frame3_background_slap.gif);
 }
-
 #frame4 {
-  display: initial;
+  display: none;
   background-image: url(../images/bar.svg);
 }
-
 #frame5 {
   display: none;
   background-image: url(../images/frame1_background.png);
 }
-
-
 
 /*** BUTTONS ***/
 #btn_play {
@@ -150,7 +135,6 @@ body {
   padding: 40px 60px;
   margin: 5px 9px 0px;
   border-top-left-radius: 20px;
-
 }
 .btn__choice--pickup {
   background: url(../images/talk.svg) no-repeat center;
@@ -174,8 +158,6 @@ button:not(.unhoverable):hover {
   font-size: 30px;
   width: 7%;
 }
-
-
 
 /*** CHARACTERS ***/
 #johnny1 {
@@ -229,9 +211,6 @@ button:not(.unhoverable):hover {
   cursor: pointer;
 }
 
-
-
-
 /*** CLASS ANIMATIONS ***/
 .screen_transition {
   animation: screen_transition .6s ease-out .5s forwards;
@@ -245,8 +224,6 @@ button:not(.unhoverable):hover {
 .skew {
   animation: skew .3s ease-in-out forwards;
 }
-
-
 
 /*** KEYFRAMES ANIMATIONS ***/
 @keyframes skew {

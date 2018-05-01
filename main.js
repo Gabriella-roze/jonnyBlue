@@ -36,17 +36,30 @@ const ladyTwo = document.getElementById('lady2');
 const ladyBoy = document.getElementById('ladyboy');
 const musician = document.getElementById('musician');
 const hand = document.getElementById('hand');
-//animations
 
 //GENERAL
+let music = false;
+let steps = 0;
+
 btnReset.addEventListener('click', function(){
   location.reload();
 })
 
-// FRAMES
+function makeButtonUnclickable(btn) {
+  btn.disabled = true;
+  btn.style.opacity = '0.5';
+  btn.style.cursor = 'initial';
+}
+
+function makeButtonClickable(btn) {
+  btn.disabled = false;
+  btn.style.opacity = '1';
+  btn.style.cursor = 'pointer';
+}
+
+//// FRAMES
 // frame1
 makeButtonUnclickable(btnPickup);
-let music = false;
 
 btnSoundPlay.addEventListener('click', function(){
   if (music == false){
@@ -100,22 +113,11 @@ function strip2() {
     dreamsSound();
   }, 100);
 };
+
 function dreamsSound(){
   setTimeout(function(){
     soundPickUp.play();
   }, 500);
-}
-
-function makeButtonUnclickable(btn) {
-  btn.disabled = true;
-  btn.style.opacity = '0.5';
-  btn.style.cursor = 'initial';
-}
-
-function makeButtonClickable(btn) {
-  btn.disabled = false;
-  btn.style.opacity = '1';
-  btn.style.cursor = 'pointer';
 }
 
 function goaway() {
@@ -149,8 +151,6 @@ function frameThreePlay(){
 }
 
 //frame4
-let steps = 0;
-
 function frameFourPlay(){
   setTimeout(function(){
     soundTheme.volume = .4;
@@ -158,6 +158,7 @@ function frameFourPlay(){
     frameFour.style.display = 'initial';
   }, 4000)
 }
+
 johnnyMusician.addEventListener('click', function(){
   johnnyMusician.src = 'images/johnny_play.svg';
   steps += 1;
@@ -173,6 +174,7 @@ johnnyMusician.addEventListener('click', function(){
   playingMusic();
   frame5();
 })
+
 function playingMusic(){
   setTimeout(function(){
     johnnyMusician.src = 'images/johnny_noplay.svg';
@@ -198,6 +200,7 @@ musician.addEventListener('click', function(){
   musician.src = 'images/cello2.svg';
   muted(soundString);
 })
+
 function muted(sound) {
   setTimeout(function(){
     sound.muted = true;
