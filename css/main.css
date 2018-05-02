@@ -86,7 +86,7 @@ body {
   position: relative;
 }
 #frame1 {
-  display: initial;
+  display: none;
   background-color: #305C75;
 }
 #frame2 {
@@ -95,11 +95,11 @@ body {
   overflow: hidden;
 }
  #frame3 {
-  display: none;
+  display: initial;
   width: 800px;
   height: 500px;
-  /*background-image: url(../images/sprite_slap.png);
-  animation: spritesheet 5s steps(32) infinite;*/
+  background-image: url(../images/sprite_slap.png);
+  animation: sprit_slap 1s steps(32) infinite;
 }
 
 
@@ -230,11 +230,14 @@ button:not(.unhoverable):hover {
 }
 
 /*** KEYFRAMES ANIMATIONS ***/
-
-/*@keyframes spritesheet {
-  to {background-position: -25600px 0px;};
-  } */
-
+@keyframes sprit_slap {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -25600px;
+  }
+}
 @keyframes skew {
   to {
     transform: skewX(-9deg);
