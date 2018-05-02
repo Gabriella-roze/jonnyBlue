@@ -83,7 +83,6 @@ body {
   height: 98%;
   background-repeat: no-repeat, repeat;
   background-position: center;
-  background-size: 100%;
   position: relative;
 }
 #frame1 {
@@ -95,10 +94,17 @@ body {
   display: none;
   overflow: hidden;
 }
-#frame3 {
+ #frame3 {
   display: none;
-  background-image: url(../images/slap.gif);
+  width: 800px;
+  height: 500px;}
+  /*background-image: url(../images/sprite_slap.png);
+  animation: spritesheet 50s steps(32) infinite;
 }
+@keyframes spritesheet {
+  to {background-position: -25600px 0px;};
+  } */
+
 #frame4 {
   display: none;
   background-image: url(../images/bar.svg);
