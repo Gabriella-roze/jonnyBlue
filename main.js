@@ -158,7 +158,7 @@ function brokenHeartPlay(){
     console.log('hi heart');
     frameThree.style.display = 'none';
     brokenHeart.style.display = 'initial';
-  }, 1500)
+  }, 1000)
 }
 
 //frame4
