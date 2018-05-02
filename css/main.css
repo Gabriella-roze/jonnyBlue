@@ -97,13 +97,11 @@ body {
  #frame3 {
   display: none;
   width: 800px;
-  height: 500px;}
+  height: 500px;
   /*background-image: url(../images/sprite_slap.png);
-  animation: spritesheet 50s steps(32) infinite;
+  animation: spritesheet 5s steps(32) infinite;*/
 }
-@keyframes spritesheet {
-  to {background-position: -25600px 0px;};
-  } */
+
 
 #frame4 {
   display: none;
@@ -232,6 +230,11 @@ button:not(.unhoverable):hover {
 }
 
 /*** KEYFRAMES ANIMATIONS ***/
+
+/*@keyframes spritesheet {
+  to {background-position: -25600px 0px;};
+  } */
+
 @keyframes skew {
   to {
     transform: skewX(-9deg);
