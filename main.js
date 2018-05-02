@@ -28,6 +28,7 @@ const frameTwo = document.getElementById('frame2');
 const frameThree = document.getElementById('frame3');
 const frameFour = document.getElementById('frame4');
 const frameFive = document.getElementById('frame5');
+const brokenHeart = document.getElementById('broken_heart')
 // characters
 const johnnyOne = document.getElementById('johnny1');
 const johnnyTwo = document.getElementById('johnny2');
@@ -146,9 +147,17 @@ function frameThreePlay(){
     frameTwo.style.display = 'none';
     frameThree.style.display = 'initial';
     frameFourPlay();
+    brokenHeartPlay();
     soundTheme.play();
     soundIntro.pause();
   }, 3000)
+}
+
+function brokenHeartPlay(){
+  setTimeout(function(){
+    frameThree.style.display = 'none';
+    brokenHeart.style.display = 'initial'
+  }, 2000)
 }
 
 //frame4
@@ -157,7 +166,7 @@ function frameFourPlay(){
     soundTheme.volume = .4;
     frameThree.style.display = 'none';
     frameFour.style.display = 'initial';
-  }, 4000)
+  }, 5000)
 }
 
 johnnyMusician.addEventListener('click', function(){

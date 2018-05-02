@@ -99,9 +99,16 @@ body {
   width: 800px;
   height: 500px;
   background-image: url(../images/sprite_slap.png);
-  animation: sprit_slap 1s steps(32) infinite;
+  animation: sprite_slap 1s steps(32) infinite;
 }
 
+#broken_heart{
+  display: none;
+  width: 800px;
+  height: 500px;
+  background-image: url(../images/sprite_heart.png);
+  animation: sprite_heart 2s steps(11) infinite;
+}
 
 #frame4 {
   display: none;
@@ -230,7 +237,17 @@ button:not(.unhoverable):hover {
 }
 
 /*** KEYFRAMES ANIMATIONS ***/
-@keyframes sprit_slap {
+
+@keyframes sprite_heart {
+from {
+  background-position: 0px;
+}
+to{
+  background-position: -8800px;
+}
+}
+
+@keyframes sprite_slap {
   from {
     background-position: 0px;
   }
