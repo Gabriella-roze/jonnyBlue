@@ -86,7 +86,7 @@ body {
   position: relative;
 }
 #frame1 {
-  display: none;
+  display: initial;
   background-color: #305C75;
 }
 #frame2 {
@@ -95,21 +95,19 @@ body {
   overflow: hidden;
 }
  #frame3 {
-  display: initial;
+  display: none;
   width: 800px;
   height: 500px;
   background-image: url(../images/sprite_slap.png);
   animation: sprite_slap 1s steps(32) infinite;
 }
-
-#broken_heart{
+#frame3_1{
   display: none;
   width: 800px;
   height: 500px;
   background-image: url(../images/sprite_heart.png);
   animation: sprite_heart 2s steps(11) infinite;
 }
-
 #frame4 {
   display: none;
   background-image: url(../images/bar.svg);
@@ -239,12 +237,12 @@ button:not(.unhoverable):hover {
 /*** KEYFRAMES ANIMATIONS ***/
 
 @keyframes sprite_heart {
-from {
+  from {
   background-position: 0px;
-}
-to{
+  }
+  to{
   background-position: -8800px;
-}
+  }
 }
 
 @keyframes sprite_slap {
