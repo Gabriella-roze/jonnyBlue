@@ -28,7 +28,7 @@ const frameTwo = document.getElementById('frame2');
 const frameThree = document.getElementById('frame3');
 const frameFour = document.getElementById('frame4');
 const frameFive = document.getElementById('frame5');
-const brokenHeart = document.getElementById('frame3_1')
+const brokenHeart = document.getElementById('frame3_1');
 // characters
 const johnnyOne = document.getElementById('johnny1');
 const johnnyTwo = document.getElementById('johnny2');
