@@ -138,6 +138,7 @@ btnPickup.addEventListener('click', function() {
   frameThreePlay();
   johnnyTwo.src = 'images/johnny_nude.gif';
   btnPickup.classList.add('unhoverable');
+  ladyOne.classList.remove('skew');
 })
 
 // frame3
@@ -189,7 +190,7 @@ johnnyMusician.addEventListener('click', function(){
 function playingMusic(){
   setTimeout(function(){
     johnnyMusician.src = 'images/johnny_noplay.svg';
-    ladyTwo.style.right = steps * 15 + '%';
+    ladyTwo.style.right = steps * 18 + '%';
   }, 3300)
 }
 
@@ -239,3 +240,5 @@ function frame5(){
     }, 4000);
   }
 }
+
+//frame6

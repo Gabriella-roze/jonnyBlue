@@ -84,6 +84,7 @@ body {
   background-repeat: no-repeat, repeat;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 #frame1 {
   display: initial;
@@ -92,7 +93,6 @@ body {
 #frame2 {
   background-image: url(../images/frame2_background.png);
   display: none;
-  overflow: hidden;
 }
  #frame3 {
   display: none;
@@ -114,7 +114,15 @@ body {
 }
 #frame5 {
   display: none;
-  background-image: url(../images/frame1_background.png);
+  width: 800px;
+  height: 500px;
+  background-image: url(../images/sprite_end.png);
+  animation: sprite_end 1.5s steps(21) 1 forwards;
+}
+#frame6 {
+  display: none;
+  width: 800px;
+  height: 500px;
 }
 
 /*** BUTTONS ***/
@@ -207,7 +215,7 @@ button:not(.unhoverable):hover {
   position: absolute;
   height: 63%;
   bottom: 10%;
-  right: 0%;
+  right: 2%;
   transition: .5s ease-in-out;
   z-index: 1;
   cursor: pointer;
@@ -235,13 +243,20 @@ button:not(.unhoverable):hover {
 }
 
 /*** KEYFRAMES ANIMATIONS ***/
-
+@keyframes sprite_end {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -16800px;
+  }
+}
 @keyframes sprite_heart {
   from {
-  background-position: 0px;
+    background-position: 0px;
   }
   to{
-  background-position: -8800px;
+    background-position: -8800px;
   }
 }
 
