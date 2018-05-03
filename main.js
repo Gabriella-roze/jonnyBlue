@@ -246,6 +246,7 @@ function frame5(){
 //frame6
 function frame6(){
   setTimeout(function(){
+    soundTheme.pause();
     frameFive.style.display = 'none';
     frameSix.style.display = 'initial';
   }, 2000)
