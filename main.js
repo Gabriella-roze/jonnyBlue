@@ -28,6 +28,7 @@ const frameTwo = document.getElementById('frame2');
 const frameThree = document.getElementById('frame3');
 const frameFour = document.getElementById('frame4');
 const frameFive = document.getElementById('frame5');
+const frameSix = document.getElementById('frame6');
 const brokenHeart = document.getElementById('frame3_1');
 // characters
 const johnnyOne = document.getElementById('johnny1');
@@ -237,8 +238,16 @@ function frame5(){
     setTimeout(function(){
       frameFour.style.display = 'none';
       frameFive.style.display = 'initial';
+      frame6();
     }, 4000);
   }
 }
 
 //frame6
+function frame6(){
+  setTimeout(function(){
+    frameFive.style.display = 'none';
+    frameSix.style.display = 'initial';
+  }, 2000)
+
+}
