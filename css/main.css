@@ -94,7 +94,7 @@ body {
   background-image: url(../images/frame2_background.png);
   display: none;
 }
- #frame3 {
+#frame3 {
   display: none;
   width: 800px;
   height: 500px;
@@ -259,7 +259,6 @@ button:not(.unhoverable):hover {
     background-position: -8800px;
   }
 }
-
 @keyframes sprite_slap {
   from {
     background-position: 0px;
